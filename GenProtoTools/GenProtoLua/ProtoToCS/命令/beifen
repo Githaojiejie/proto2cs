@@ -1,0 +1,4 @@
+PowerShell -Command "& {$MyPath = 'AchievementDefine.proto';$MyFile = Get-Content $MyPath;$Utf8NoBomEncoding = New-Object System.Text.UTF8Encoding $False;[System.IO.File]::WriteAllLines($MyPath, $MyFile, $Utf8NoBomEncoding);}"
+
+
+PowerShell -Command "& {$MyPath = 'F:\Work\Learn\xlua-framework-master\xlua-framework-master\ProtoToCS\ProtoGen\proto\Test\TestConvert';Get-ChildItem $MyPath\* -Include *.proto | Foreach-Object {[System.IO.File]::WriteAllText($_.FullName,[System.IO.File]::ReadAllText($_.FullName));}}"

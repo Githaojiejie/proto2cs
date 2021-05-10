@@ -1,0 +1,28 @@
+
+根据本地工程路径放置不同 举例如下
+checkout  https://10.220.8.93/svn/MDAssets/Alpha/MDZS  到 D:\MDZS
+checkout https://10.220.8.93/svn/MDCommon/Alpha/common 到 D:\common
+
+记事本打开proto_build_点我一键生成客户端协议.bat
+
+修改对应指向路径
+  
+SET _PROJECT_PATH=D:\MDZS
+SET _PROTO_PATH=D:\common\protocol
+
+
+
+点击执行
+proto_build_点我一键生成客户端协议.bat
+
+然后点击按两次键盘继续生成。
+
+检查: D:\MDZS\Assets\Plugins\Protobuf\
+
+下的 DTO.dll  DTOSerializer.dll 是否最新
+
+启动客户端测试最新协议是否正确。
+
+
+
+
